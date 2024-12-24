@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retail Management System</title>
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Retail Store Management System</h1>
+    </header>
+    <main>
+      <section id="data-section">
+        <h2>View Entity Data</h2>
+        <label for="entity-select">Choose an Entity:</label>
+        <select id="entity-select">
+          <option value="customers">Customers</option>
+          <option value="products">Products</option>
+          <option value="employees">Employees</option>
+          <option value="sales">Sales</option>
+          <option value="events">Events</option>
+          <option value="suppliers">Suppliers</option>
+        </select>
+        <button onclick="loadEntityData()">Load Data</button>
+        <div id="data-display"></div>
+      </section>
+
+      <section id="query-section">
+        <h2>Execute Custom MongoDB Query</h2>
+        <label for="query-input">Enter Any Query:</label>
+        <input type="text" id="query-input" placeholder="Enter MongoDB query here" />
+        <button onclick="executeCustomQuery()">Run Query</button>
+        <div id="query-result"></div>
+      </section>
+    </main>
+    <script src="static/script.js"></script>
+  </body>
+</html>

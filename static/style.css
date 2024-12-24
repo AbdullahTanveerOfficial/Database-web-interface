@@ -1,0 +1,151 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #1a7f66;
+    color: #fff;
+    text-align: center;
+    padding: 3em;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid #fff;
+}
+
+h1 {
+    font-size: 2.8em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/* Main content layout */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+    display: grid;
+    gap: 3em;
+}
+
+/* Section styling for data and query */
+#data-section, #query-section {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#data-section:hover, #query-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: #1a7f66;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 1.5em;
+}
+
+/* Styling for select, input, and button elements */
+label, select, input, button {
+    font-size: 1.1em;
+    padding: 0.8em;
+    margin: 0.5em 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+select, input {
+    width: 100%;
+    max-width: 350px;
+}
+
+button {
+    background-color: #1a7f66;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #155e49;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Styling for data and query results */
+#data-display, #query-result {
+    margin-top: 2em;
+    text-align: left;
+    display: block;
+    width: 100%;
+}
+
+/* Table styling for better visual appeal */
+table {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 1.2em;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+th {
+    background-color: #1a7f66;
+    color: #fff;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    main {
+        padding: 1em;
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    label, select, input, button {
+        width: 100%;
+    }
+
+    button {
+        padding: 0.8em;
+    }
+}
